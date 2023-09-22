@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SIH project 1362</title>
+    <meta name="description" content="SIH project no. 1362 : SPSU : leader : Naman jain" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendors4/morris.js/morris.css" rel="stylesheet" type="text/css" />
+    
+    <!-- My CSS -->
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="dist/css/mod.css">
+</head>
+
+<body>
+
+
+    <!-- HK Wrapper -->
+    <div class="hk-wrapper hk-horizontal-nav">
+
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
+            <a class="navbar-brand proj-info" href="dashboard1.html">
+                <img class="brand-img d-inline-block mr-5" src="assets/logo.png" alt="brand"/> SIH PROJECT NO 1362
+            </a>
+            <ul class="navbar-nav hk-navbar-content">
+                <a class="team-name">
+                    Student Dropout Analysis For School Education
+                </a>
+            </ul>
+        </nav>
+        <!-- /Top Navbar -->
+
+        <!-- Main Content -->
+        <div class="hk-pg-wrapper">
+            <!-- Container -->
+            <div class="container-fluid mt-xl-50 mt-sm-30 mt-15">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hk-row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-sm">
+                                    <div class="card-body">
+                                        <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">Dropout Rate</span>
+                                        <div class="d-flex align-items-center justify-content-between position-relative">
+                                            <div class="d-flex" id="droprate">
+                                                <span class="d-block display-5 font-weight-400 text-dark mr-5 counter-anim">17</span>
+                                                <span class="d-block display-5 font-weight-400 text-dark">%</span>
+                                            </div>
+                                            <div class="position-absolute r-0 b-0 w-40">
+                                                <div id="spark1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-sm">
+                                    <div class="card-body">
+                                        <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">OUTLIER CASE RATE</span>
+                                        <div class="d-flex align-items-center justify-content-between position-relative">
+                                            <div class="d-flex" id="f-droprate">    
+                                                <span class="d-block display-5 font-weight-400 text-dark mr-5 counter-anim">6.78</span>
+                                                <span class="d-block display-5 font-weight-400 text-dark">%</span>
+                                            </div>
+                                            <div class="position-absolute r-0 b-0 w-40">
+                                                <div id="spark2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-sm">
+                                    <div class="card-body">
+                                        <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">GENERAL FACTOR</span>
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div>
+                                                <span class="d-block" id="g-factor">
+													<span class="display-5 font-weight-400 text-dark">SCHOOL</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="card card-sm">
+                                    <div class="card-body">
+                                        <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">MAIN FACTOR AFFECTING</span>
+                                        <div class="d-flex align-items-end justify-content-between">
+                                            <div>
+                                                <span class="d-block" id="main-factor">
+													<span class="display-5 font-weight-400 text-dark">INFRASTRUCTURE</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hk-row">
+                            <div class="col-lg-8">
+                                <div class="card card-refresh">
+                                    <div class="refresh-container">
+                                        <div class="loader-pendulums"></div>
+                                    </div>
+                                    <div class="card-header card-header-action">
+                                        <div>
+                                            <h6 class="mb-10">AVAILABLE SOLUTIONS</h6>
+                                            <p class="font-14 w-80">Solution available to reduce the dropout rate in school.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div style="height: 400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-header card-header-action">
+                                        <h6>Other Factors</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="e_chart_3" style="height:194px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+
+            <!-- Footer -->
+            <div class="hk-footer-wrap container">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <p>Made By<a href="#" class="text-dark">Naman Jain and Tech Geeks</a> © 2023</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p class="d-inline-block">Follow us</p>
+                            <a href="https://github.com/Self-nasu" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="bi bi-github"></i></span></a>
+                            <a href="https://www.instagram.com/self.nasu/" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="bi bi-instagram"></i></span></a>
+                            <a href="https://www.youtube.com/@decodenasu" class="d-inline-block btn btn-icon btn-icon-only btn-indigo btn-icon-style-4"><span class="btn-icon-wrap"><i class="bi bi-youtube"></i></span></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- /Footer -->
+        </div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /HK Wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendors4/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendors4/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../vendors4/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JavaScript -->
+    <script src="dist/js/jquery.slimscroll.js"></script>
+
+    <!-- Counter Animation JavaScript -->
+    <script src="../vendors4/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="../vendors4/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendors4/raphael/raphael.min.js"></script>
+    <script src="../vendors4/morris.js/morris.min.js"></script>
+
+    <!-- Easy pie chart JS -->
+    <script src="../vendors4/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+
+    <!-- Apex JavaScript -->
+    <script src="../vendors4/apexcharts/dist/apexcharts.min.js"></script>
+
+    <!-- EChartJS JavaScript -->
+    <script src="../vendors4/echarts/dist/echarts-en.min.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="dist/js/init.js"></script>
+    <script src="dist/js/dashboard2-data.js"></script>
+
+</body>
+
+</html>
