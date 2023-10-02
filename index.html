@@ -7,21 +7,24 @@
     <meta name="description" content="SIH project no. 1362 : SPSU : leader : Naman jain" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="sih/assets/favicon.png" type="image/png">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
     <!-- Morris Charts CSS -->
-    <link href="../vendors4/morris.js/morris.css" rel="stylesheet" type="text/css" />
+    <link href="vendors4/morris.js/morris.css" rel="stylesheet" type="text/css" />
     
     <!-- My CSS -->
-    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="dist/css/mod.css">
+    <link href="sih/dist/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="sih/dist/css/mod.css">
 </head>
 
 <body>
 
+    <div class="preloader">
+        <div class="loader"></div>
+      </div>
 
     <!-- HK Wrapper -->
     <div class="hk-wrapper hk-horizontal-nav">
@@ -29,7 +32,7 @@
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
             <a class="navbar-brand proj-info" href="dashboard1.html">
-                <img class="brand-img d-inline-block mr-5" src="assets/logo.png" alt="brand"/> SIH PROJECT NO 1362
+                <img class="brand-img d-inline-block mr-5" src="sih/assets/logo.png" alt="brand"/> SIH PROJECT NO 1362
             </a>
             <ul class="navbar-nav hk-navbar-content">
                 <a class="team-name">
@@ -53,7 +56,7 @@
                                         <span class="d-block font-11 font-weight-500 text-dark text-uppercase mb-10">Dropout Rate</span>
                                         <div class="d-flex align-items-center justify-content-between position-relative">
                                             <div class="d-flex" id="droprate">
-                                                <span class="d-block display-5 font-weight-400 text-dark mr-5 counter-anim">17</span>
+                                                <span class="d-block display-5 font-weight-400 text-dark mr-5 counter-anim">17.65</span>
                                                 <span class="d-block display-5 font-weight-400 text-dark">%</span>
                                             </div>
                                             <div class="position-absolute r-0 b-0 w-40">
@@ -121,7 +124,13 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div style="height: 400px;"></div>
+                                        <div style="height: 400px;">
+                                            <div id="solution" class="h4 mt-2"><span class="mr-3"><i class="bi bi-lightbulb-fill text-bulb"></i></span>Infrastructure Boost Program (IBP)</div>
+                                            <div id="solution" class="h4 mt-2"><span class="mr-3"><i class="bi bi-lightbulb-fill text-bulb"></i></span>Digital Classroom Expansion Initiative</div>
+                                            <div id="solution" class="h4 mt-2"><span class="mr-3"><i class="bi bi-lightbulb-fill text-bulb"></i></span>Safe and Accessible Schools Project from goverments</div>
+                                            <div id="solution" class="h4 mt-2"><span class="mr-3"><i class="bi bi-lightbulb-fill text-bulb"></i></span>Teacher Training for Infrastructure Utilization</div>
+                                            <div id="solution" class="h4 mt-2"><span class="mr-3"><i class="bi bi-lightbulb-fill text-bulb"></i></span>Public-Private Partnership for School Upgrades</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -165,36 +174,38 @@
     </div>
     <!-- /HK Wrapper -->
 
+    <!-- Page loader -->
+    <script src="sih/dist/js/pageload.js"></script>
     <!-- jQuery -->
-    <script src="../vendors4/jquery/dist/jquery.min.js"></script>
+    <script src="vendors4/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../vendors4/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../vendors4/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors4/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors4/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Slimscroll JavaScript -->
-    <script src="dist/js/jquery.slimscroll.js"></script>
+    <script src="sih/dist/js/jquery.slimscroll.js"></script>
 
     <!-- Counter Animation JavaScript -->
-    <script src="../vendors4/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="../vendors4/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="vendors4/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendors4/jquery.counterup/jquery.counterup.min.js"></script>
 
     <!-- Morris Charts JavaScript -->
-    <script src="../vendors4/raphael/raphael.min.js"></script>
-    <script src="../vendors4/morris.js/morris.min.js"></script>
+    <script src="vendors4/raphael/raphael.min.js"></script>
+    <script src="vendors4/morris.js/morris.min.js"></script>
 
     <!-- Easy pie chart JS -->
-    <script src="../vendors4/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="vendors4/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
 
     <!-- Apex JavaScript -->
-    <script src="../vendors4/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="vendors4/apexcharts/dist/apexcharts.min.js"></script>
 
     <!-- EChartJS JavaScript -->
-    <script src="../vendors4/echarts/dist/echarts-en.min.js"></script>
+    <script src="vendors4/echarts/dist/echarts-en.min.js"></script>
 
     <!-- Init JavaScript -->
-    <script src="dist/js/init.js"></script>
-    <script src="dist/js/dashboard2-data.js"></script>
+    <script src="sih/dist/js/init.js"></script>
+    <script src="sih/dist/js/dashboard2-data.js"></script>
 
 </body>
 
