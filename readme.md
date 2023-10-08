@@ -6,7 +6,7 @@
 #### Team Leader: Naman Jain
 
 ### Problem Statement
-Right to education is a key concern for the government and at school level, dropout ratio is high due to poverty and social, economic reasons.
+Right to education is a key concern for the government and at school level, dropout ratio is high due to poverty and socio-economic reasons.
 If the government has dropout student analysis on following different categories, it will be very useful in framing different policies. 
 - School wise
 - Area wise
@@ -52,7 +52,7 @@ If the government has dropout student analysis on following different categories
 ## PROPOSED SOLUTION
 
 ## Overview
-The proposed solution aims to address the critical issue of high dropout rates in schools across Gujarat. We will develop an ML-powered solution that can predict dropout rates and recommend targeted interventions to reduce dropout rates effectively.
+Our proposed solution aims to address the critical issue of high dropout rates in schools across Gujarat. We will develop a ML-powered solution that can predict dropout rates and recommend targeted interventions to reduce dropout rates effectively.
 
 ## Steps
 
@@ -64,11 +64,11 @@ The proposed solution aims to address the critical issue of high dropout rates i
    - Identify key features that could significantly influence dropout rates, such as school infrastructure, academic performance, family income, etc.
 
 ### 3. **Model Selection and Training**
-   - Choose a suitable machine learning model a decision tree, due to its interpretability and relevance to this problem.
+   - Chose a suitable machine learning model i.e. decision tree, due to its interpretability and relevance to this problem.
    - We will Train the ML model using the preprocessed dataset with identified features to predict dropout probabilities.
 
 ### 4. **Prediction and Intervention Recommendations**
-   - After we get major and minor (sub) factors affecting the dropout rates we will use one decision making program which will go through search for the available goverment scheme in goverment database for student and suggeste us the best scheme can be implemented for the reduce dropout rates.
+   - After we get major and minor (sub) factors affecting the dropout rates we will be using decision making algorithm which will undergo searching for the available goverment scheme in goverment database for student and will suggest us the best scheme that can be implemented for the reducuction in dropout rates.
 
 ## Conclusion
 By employing this solution, we aim to significantly reduce dropout rates in schools, providing a conducive environment for students to thrive academically and contribute positively to society.
@@ -77,10 +77,10 @@ By employing this solution, we aim to significantly reduce dropout rates in scho
 
 - While Scaling this project to real life we can encounter many other fields and attribute of data which we have not included so there can be increase in error percentage in our ML model.
 - This ML model can not accurately detect the Psychological reasons of dropout.
-- There will be some school who will be not collecting this data properly on there basic.
+- There will be some school which are not collecting these data properly on there basis.
 
 ## FUTURE SCOPE
 
-- We can suggest to the government that to add some more field of data in UDISE form which can further improve the analysis.
-- Makeing this Portal generalized for Sub municipal corporations for area level analysis of there schools.
+- We can suggest government to add some more field of data in UDISE form which can help further to improve the analysis.
+- Making this Portal generalized for Sub municipal corporations for area level analysis of there schools.
 - Also we can use AI for detecting Psychological causes.
